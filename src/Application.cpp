@@ -110,7 +110,7 @@ void LocalSearch::Application::run() const {
 		std::tuple<double, double>(0.5, 0.00000001)
 	};
 
-	std::array<unsigned int, 5> boardSizes = {4, 8, 16, 32};
+	std::array<unsigned int, 4> boardSizes = {4, 8, 16, 32};
 
 	for (const unsigned int& boardSize : boardSizes) {
 		std::cout << std::endl << "##################################################################" << std::endl;
