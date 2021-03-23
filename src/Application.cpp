@@ -97,7 +97,7 @@ Board* LocalSearch::Application::simulatedAnnealing(const Board& initBoard, doub
 * @returns The chosen successor
 */
 Board* LocalSearch::Application::getRandom(const std::vector<Board*>& successors) const {
-	return successors[randomNum(0, successors.size()-1)];
+	return successors[randomNum(0, static_cast<unsigned int>(successors.size()) - 1)];
 }
 
 /**
