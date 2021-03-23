@@ -32,5 +32,8 @@ int main() {
 		std::cerr << strStream.str() << std::endl;
 	}
 
+	// Avoid window closing for MSVC
+	std::cin.get();
+
 	return 0;
 }
